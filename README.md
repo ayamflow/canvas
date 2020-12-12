@@ -6,7 +6,7 @@ A lightweight wrapper around the `<canvas>` element to ease context and ratio ha
 ## Install
 
 ```
-npm install watsondg/canvas -S
+npm install ayamflow/canvas -S
 ```
 
 ## Usage
@@ -37,6 +37,7 @@ Defines how the DPI (simple, retina, ...) is calculated. Useful to override if y
 
 Create a new instance of Canvas.
 * `options` - (OPTIONAL) - configuration parameters:
+- el: to pass an existing canvas element
 - ratio: force a devicePixelRatio. Defaults to window.devicePixelRatio or 1.
 - parent: a DOM element to automatically append to. If not provided, appending `canvas.el` is up to you.
 

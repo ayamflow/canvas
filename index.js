@@ -4,7 +4,7 @@ module.exports = Canvas;
 
 function Canvas(options) {
     options = options || {};
-    this.el = document.createElement('canvas');
+    this.el = options.el || document.createElement('canvas');
     this.context = this.el.getContext('2d');
     this.ratio = options.ratio || Canvas.getDPI();
     this.width = 0;
